@@ -1,0 +1,133 @@
+body{
+    background-color: rgb(55, 56, 56);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.section{
+    height:100vh;
+    max-width:1246px;
+    background-color:antiquewhite;
+    display:flex;
+    margin:auto;
+  }
+
+.content-left{
+    width:40%;
+    display:flex;
+    justify-items:center;
+    align-items: center;
+    background-image: url("./img/background.jpg");
+    background-position: bottom;
+}
+.content-right{
+    background-color: rgb(224, 220, 220);
+    width:60%;
+    padding:120px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color:#002c61;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+h1{
+    text-align: center;
+}
+.logo-wrapper{
+    text-align: center;
+}
+.logo-wrapper img{
+    width:70%;
+}
+.logo{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 40px;
+}
+.signup-form{
+    background-color: white;
+    padding:60px;
+    padding-bottom: 40px;
+    margin: 60px 0;
+    border-radius: 4px;
+    display:flex;
+    flex-direction: column;
+    flex-grow:1;
+}
+.form-row{
+    margin-bottom: 20px;
+    display:flex;
+    flex-direction: row;
+}
+.margin-right{
+    margin-right:5px;
+}
+.margin-left{
+    margin-left:5px;
+}
+.column-pair{
+    display:flex;
+    flex-direction: column;
+    /* border: solid 1px red; */
+    flex: 1;
+    
+}
+button{
+    background-color: rgb(241, 97, 1);
+    border: none;
+    padding:8px 20px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 2px;
+    font-size:24px ;
+    color:#002c61;
+    font-weight:700;
+    margin-left:auto;
+}
+button:hover{
+    background-color: rgb(255, 181, 131);
+    cursor: pointer;
+    color: #001227;
+}
+label{
+    margin-bottom: 3px;
+    
+}
+input{
+ outline:none;
+  border: 1px solid rgb(0, 44, 97, 0.3);
+  border-radius: 3px;
+  width: 100%;
+  padding: 7px;
+  font-size: 14px;
+  box-shadow: inset 0px 1px 1px #363636;
+  border-radius: 4px;
+}
+
+input[type="text"]:hover, input[type="text"]:focus,
+input[type="tel"]:hover, input[type="tel"]:focus,
+input[type="email"]:hover, input[type="email"]:focus {    
+    border:1px solid green;
+    }
+input:required {
+    border:1px solid black;
+  }
+input:optional{
+    border:1px solid silver;
+  }
+
+input[type="email"]:invalid, 
+input[type="tel"]:invalid {
+border: 1px solid red;
+}
+
+input:invalid {
+color: red;
+}
+

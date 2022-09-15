@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='styles.css'>
+    <title>Sign-up Form</title>
+</head>
+<body>
+    <div class="section">
+
+        <div class="content-left">
+            <div class="logo">
+                <div class="logo-wrapper">
+                    <img src="./img/logo.png">
+                </div>
+            </div> 
+        </div>
+
+        <div class="content-right">
+            <div class="flex-container">
+            <h1>SIGN UP TO FIND CONSTRUCTION ESTIMATOR JOBS NOW</h1>
+            <form action="" method="get" class="signup-form">
+                <div class="form-row">
+                    <div class="column-pair margin-right">
+                        <label for="first-name ">First Name</label>
+                        <input id="first-name" 
+                        name="first-name"
+                        type="text">
+                    </div>
+                    <div class="column-pair margin-left">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" 
+                        name="last-name"
+                        type="text">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="column-pair margin-right">
+                        <label for="email">Email</label>
+                        <input id="email" 
+                        name="email"
+                        type="email">
+                    </div>
+                    <div class="column-pair margin-left">
+                        <label for="tel-number">Phone Number</label>
+                        <input id="tel-number" 
+                        name="phone-number"
+                        type="tel"
+                        pattern="\d{1,5}"
+                        maxlength="16">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="column-pair margin-right">
+                        <label for="password">Enter Password</label>
+                        <input id="password" 
+                        name="password"
+                        type="password"
+                        class="error">
+                    </div>
+                    <div class="column-pair margin-left">
+                        <label for="password-confirm">Confirm Password</label>
+                        <input id="password-confirm" 
+                        name="password-confirm"
+                        type="password"
+                        class="error">
+                    </div>
+                </div>
+
+                <div class="form-row">
+                   <button type="submit" form="signup-form">Sign Up</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+
+</body>
+</html>
